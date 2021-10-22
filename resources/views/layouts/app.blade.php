@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Winkel - Scouting Raamsdonksveer</title>
+    <title>4Shop Nick Schoenmakers</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,11 +19,12 @@
 <body>
     <div class="container">
       <header class="header d-flex justify-content-between align-items-center">
-        <h3 class="text-muted"><a href="{{ route('home') }}" class="no-link">Winkel van Scouting Raamsdonksveer</a></h3>
+        <img src="https://raw.githubusercontent.com/4S-NL/Organisatie/main/Bronnen/Logos/4S-Logo-Compact-Small.png" alt="s4 logo">
+        <h3 class="text-muted"><a href="{{ route('home') }}" class="no-link">4Shop</a></h3>
         <a href="{{ route('cart') }}"><img class="cart" src="{{ url('img/cart.png') }}" alt=""></a>
       </header>
 
-      <main role="main">
+      <main role="main">        
         @if (session('status'))
             <div class="alert alert-{{ session('status')[0] }}">
                 {!! session('status')[1] !!}
@@ -43,7 +44,7 @@
       </main>
 
       <footer class="footer">
-        <p><strong>Mail bij vragen: <a href="mailto:winkelbeheer@scoutingrveer.nl">winkelbeheer@scoutingrveer.nl</a></strong> &middot; S.B.B.S. namens Scouting Raamsdonksveer, Kerklaan 22 4942AR Raamsdonksveer, KvK: 41100325, tel: 0162769096.</p>
+        <p><strong>Mail bij vragen: <a href="mailto:winkelbeheer@student.nl">winkelbeheer@student.nl</a></strong> &middot; S.B.B.S. namens leerling Naam, weg 1 1212ZE Naam, KvK: 41100325, tel: 0134567890.</p>
       </footer>
 
     </div>

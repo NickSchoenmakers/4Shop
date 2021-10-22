@@ -13,7 +13,7 @@
 							<p>{{ $product->description }}</p>
 							@if($product->discount  > 0 )
 								<p class="discount">nu {{ $product->discount }}% korting</p>
-								<p class="discount">orginele prijs<em>&euro;{{ $product->getOriginal('price') }}</em></p>							
+								<p class="discount">orginele prijs<em>&euro;{{ $product->price }}</em></p>							
 							@endif
 						@endunless
 					</div>

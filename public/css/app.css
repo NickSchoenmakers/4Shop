@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+
 .jumbotron img{
 	width: 70%;
 	margin-bottom: 1.5rem;
@@ -25,6 +28,7 @@ form li{
 }
 
 header{
+	font-family: 'Libre Baskerville', serif;
 	display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,6 +63,11 @@ header{
 	margin-top: 0;
 }
 
+.product-title{
+	display:flex;
+	justify-content:space-between;
+}
+
 .product-row{
 	display: flex;
 	flex-direction: row;
@@ -78,7 +87,10 @@ header{
 
 .product-body{
 	width: 50%;
-	padding: 1em 2em;
+	padding: 1em 2em;	
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
 }
 
 .products .form-control{
@@ -140,4 +152,12 @@ span.collapsing{
 	.cart{
 		height: 24px;
 	}
+}
+
+.discount{
+	color:red;
+}
+
+.feutured_product{
+	background-color: blue;
 }
